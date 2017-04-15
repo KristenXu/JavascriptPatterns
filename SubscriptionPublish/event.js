@@ -100,7 +100,7 @@ var Event = (function(){
                     namespaceCache[ namespace ] = ret )
                 : ret;
         };
-        
+
         return {
             create: _create,
             one: function( key,fn, last ){
