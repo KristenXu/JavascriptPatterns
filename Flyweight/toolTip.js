@@ -30,4 +30,4 @@ for ( var i = 0, toolTip; toolTip = ary[ i++ ]; ){
 for ( var i = 0, str; str = [ 'A', 'B', 'C', 'D', 'E', 'F' ][ i++ ]; ){
     var toolTip = toolTipFactory.create();
     toolTip.innerHTML = str;
-}; 
+};
