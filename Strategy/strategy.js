@@ -23,4 +23,12 @@ Bonus.prototype.setStrategy = function( strategy ){
 };
 Bonus.prototype.getBonus = function(){ // 取得奖金数额
   return this.strategy.calculate( this.salary ); // 把计算奖金的操作委托给对应的策略对象
-}; 
+};
+
+//usage:
+var bonus = new Bonus();
+bonus.setSalary( 10000 );
+bonus.setStrategy( new performanceS() ); // 设置策略对象
+console.log( bonus.getBonus() ); // 输出：40000
+bonus.setStrategy( new performanceA() ); // 设置策略对象
+console.log( bonus.getBonus() ); // 输出：30000
