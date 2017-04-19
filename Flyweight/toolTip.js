@@ -16,6 +16,8 @@ var toolTipFactory = (function(){
     }
 })();
 
+
+
 var ary = [];
 for ( var i = 0, str; str = [ 'A', 'B' ][ i++ ]; ){
     var toolTip = toolTipFactory.create();
